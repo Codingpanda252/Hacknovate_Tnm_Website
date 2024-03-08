@@ -79,12 +79,11 @@ header {
 }
 
 nav {
-  position: fixed; /* Fix the navbar */
+  position: absolute;
   top: 0;
   right: 20px;
   background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.8) 100%);
   padding: 20px 40px; /* Increased padding for larger navbar */
-  z-index: 1000; /* Ensure navbar is above other content */
 }
 
 .nav-links {
@@ -221,9 +220,9 @@ footer {
 
   .nav-links {
     position: absolute;
-    top: 150px; /* Adjusted to provide space for the big heading */
-    left: 0;
-    width: 100%;
+    top: 10px; /* Move navbar to the top */
+    right: 10px; /* Move navbar to the right */
+    width: auto; /* Adjust width as needed */
     background-color: rgba(0, 0, 0, 0.8);
     padding: 10px 20px; /* Increased padding for better spacing */
     z-index: 1000; /* Ensure navbar is above other content */
