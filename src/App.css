@@ -218,24 +218,29 @@ footer {
     font-size: 80px; 
   }
 
-  .nav-links {
-    position: absolute;
-    top: 10px; /* Move navbar to the top */
-    right: 10px; /* Move navbar to the right */
-    width: auto; /* Adjust width as needed */
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 10px 20px; /* Increased padding for better spacing */
+  nav {
+    position: fixed; /* Set navbar position to fixed */
+    top: 10px; /* Adjust top position as needed */
+    right: 10px; /* Adjust right position as needed */
     z-index: 1000; /* Ensure navbar is above other content */
-    display: flex;
-    justify-content: space-between; /* Space items evenly between the big heading and right edge */
   }
 
-  .nav-links.active {
+  .nav-links {
+    list-style: none;
     display: flex;
+    align-items: center;
+    padding: 0;
   }
 
   .nav-link {
-    margin: 10px 0; 
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .nav-link:hover {
+    color: #ffb8c6; 
   }
 
   .map-image {
