@@ -176,6 +176,7 @@ const App = () => {
               >
               </a>
               <p className="mb-2">
+                Made by ❤️ Subhasish Panda EDC MAIT
                 &copy; 2024 HACKNOVATE. All rights reserved.
               </p>
             </div>
