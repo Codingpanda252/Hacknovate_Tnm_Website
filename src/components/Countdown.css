@@ -1,22 +1,25 @@
+/* Countdown.css */
+
+/* Default styles */
 .countdown-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; 
     margin-top: 50px;
-}
-
-.countdown-heading {
+  }
+  
+  .countdown-heading {
     text-align: center;
     font-size: 24px;
     margin-bottom: 20px;
-}
-
-.timer {
+  }
+  
+  .timer {
     display: flex;
-}
-
-.countdown-item {
+  }
+  
+  .countdown-item {
     position: relative;
     margin: 20px; 
     padding: 15px;
@@ -26,10 +29,33 @@
     align-items: center;
     flex-direction: column; 
     text-align: center;
-}
-
-.countdown-value {
+  }
+  
+  .countdown-value {
     font-weight: bold;
     font-size: 80px; 
     margin-right: 10px;
-}
+  }
+  
+  @media only screen and (max-width: 600px) {
+    /* Mobile styles */
+    .countdown-container {
+      margin-top: 20px; /* Adjusted margin for mobile */
+    }
+  
+    .countdown-heading {
+      font-size: 18px; /* Adjusted font size for mobile */
+      margin-bottom: 10px; /* Adjusted margin for mobile */
+    }
+  
+    .countdown-item {
+      margin: 10px; /* Adjusted margin for mobile */
+      padding: 10px; /* Adjusted padding for mobile */
+      font-size: 16px; /* Adjusted font size for mobile */
+    }
+  
+    .countdown-value {
+      font-size: 40px; /* Adjusted font size for mobile */
+    }
+  }
+  

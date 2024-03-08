@@ -1,30 +1,57 @@
 /* Sponsors.css */
 
+/* Default styles */
 .sponsors-container {
-    margin-top: 20px;
+  margin-top: 20px;
+}
+
+.section-heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+.sponsors-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsor-logo {
+  width: 150px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 10px; /* Adjust spacing between logos */
+}
+
+.theme-border {
+  border: 2px solid #3498db; /* Adjust border properties as needed */
+  padding: 20px; /* Adjust padding as needed */
+  border-radius: 10px; /* Add border radius for rounded corners */
+}
+
+@media only screen and (max-width: 600px) {
+  .sponsors-container {
+    margin-top: 10px; 
   }
-  
+
   .section-heading {
-    font-size: 24px;
-    font-weight: bold;
-    color: #3498db;
-    margin-bottom: 10px;
+    font-size: 18px; 
+    margin-bottom: 5px;
   }
-  
+
   .sponsors-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around; 
   }
-  
+
   .sponsor-logo {
-    width: 150px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin: 0 10px; /* Adjust spacing between logos */
+    width: 100px; 
+    margin: 5px;
   }
-  
+
   .theme-border {
-    border: 2px solid #3498db; /* Adjust border properties as needed */
-    padding: 20px; /* Adjust padding as needed */
-    border-radius: 10px; /* Add border radius for rounded corners */
+    padding: 10px; 
+    border-radius: 5px;
+  }
 }

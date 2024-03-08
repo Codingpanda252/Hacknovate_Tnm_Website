@@ -1,24 +1,25 @@
 /* BigHeading.css */
 
+/* Default styles */
 .big-heading-container {
   text-align: center;
 }
 
 .big-heading-text {
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 64px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 64px; /* Default font size */
 }
 
 .big-heading-desc {
-  font-size: 24px;
+  font-size: 24px; /* Default font size */
 }
 
 .presented-by {
-  font-size: 18px; 
+  font-size: 18px; /* Default font size */
 }
 
 .letter {
-  font-size: 200px;
+  font-size: 200px; /* Default font size */
   font-weight: bold;
   background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   -webkit-background-clip: text;
@@ -30,4 +31,20 @@
   opacity: 0;
 }
 
-  
+@media only screen and (max-width: 600px) {
+  .big-heading-text {
+    font-size: 36px; 
+  }
+
+  .big-heading-desc {
+    font-size: 18px; 
+  }
+
+  .presented-by {
+    font-size: 14px; 
+  }
+
+  .letter {
+    font-size: 80px; /* Adjusted font size for mobile */
+  }
+}
