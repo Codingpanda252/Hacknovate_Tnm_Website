@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
 import "./App.css";
 import Countdown from "./components/Countdown";
 import Prizes from "./components/Prizes";
@@ -27,10 +26,6 @@ const App = () => {
     };
   }, []);
 
-  const handleMenuClick = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
@@ -43,27 +38,6 @@ const App = () => {
     }
   };
 
-  const handleDragStart = (e) => {
-    e.dataTransfer.setData("text/plain", "");
-    e.currentTarget.style.opacity = "0.5";
-  };
-
-  const handleDragEnd = (e) => {
-    e.currentTarget.style.opacity = "1";
-  };
-
-  const handleDragOver = (e) => {
-    e.preventDefault();
-  };
-
-  const handleDrop = (e) => {
-    e.preventDefault();
-    const data = e.dataTransfer.getData("text/plain");
-    const dropZone = e.target;
-    dropZone.appendChild(document.getElementById(data));
-    dropZone.style.opacity = "1";
-  };
-
   const menuItems = [
     { id: "home", label: " Home " },
     { id: "countdown", label: " Countdown " },
@@ -74,7 +48,7 @@ const App = () => {
     { id: "faq", label: "FAQ" },
   ];
 
-  const blurAmount = scrollPosition / 100; 
+  const blurAmount = scrollPosition / 100;
 
   return (
     <div>
@@ -199,7 +173,8 @@ const App = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mr-4 mb-2 md:mb-0"
-              ></a>
+              >
+              </a>
               <p className="mb-2">
                 &copy; 2024 HACKNOVATE. All rights reserved.
               </p>
