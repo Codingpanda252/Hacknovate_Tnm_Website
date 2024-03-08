@@ -175,8 +175,8 @@ const App = () => {
                 className="mr-4 mb-2 md:mb-0"
               >
               </a>
+              <p>Made by ❤️ Subhasish Panda EDC MAIT</p>
               <p className="mb-2">
-                Made by ❤️ Subhasish Panda EDC MAIT
                 &copy; 2024 HACKNOVATE. All rights reserved.
               </p>
             </div>
