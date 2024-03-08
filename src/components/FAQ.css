@@ -1,0 +1,43 @@
+/* FAQ.css */
+
+.faq-container {
+    margin-top: 20px;
+  }
+  
+  .faq-item {
+    margin-bottom: 10px;
+  }
+  
+  .faq-toggle {
+    display: none;
+  }
+  .faq-heading {
+    color: #3498db; 
+    text-align: center;
+  }
+  .faq-question {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .plus-sign {
+    font-weight: normal;
+  }
+  
+  .faq-answer {
+    padding: 10px;
+    display: none;
+  }
+  
+  .faq-toggle:checked + .faq-question .plus-sign::after {
+    content: '-';
+  }
+  
+  .faq-toggle:checked + .faq-question + .faq-answer {
+    display: block;
+  }
+  

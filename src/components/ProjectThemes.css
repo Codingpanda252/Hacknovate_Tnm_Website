@@ -1,0 +1,71 @@
+/* ProjectThemes.css */
+
+.project-themes-container {
+  margin-top: 20px;
+}
+
+.section-heading {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.project-theme {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.project-theme-sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.sponsor-wrapper {
+  position: relative;
+}
+
+.sponsor-logo {
+  width: 200px; /* Increase the width for all sponsors */
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  margin-right: 20px;
+}
+
+.sponsor-logo:last-child {
+  margin-right: 0;
+}
+
+.sponsor-logo:hover {
+  transform: scale(1.1);
+}
+
+.sponsor-wrapper:nth-child(3) .sponsor-logo {
+  width: 250px; 
+}
+
+.sponsor-wrapper:nth-child(4) .sponsor-logo {
+  width: 250px; 
+}
+
+/* Description of sponsor */
+.sponsor-description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sponsor-wrapper:hover .sponsor-description {
+  opacity: 1;
+}

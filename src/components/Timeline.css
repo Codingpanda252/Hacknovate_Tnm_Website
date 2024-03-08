@@ -1,0 +1,60 @@
+/* Timeline.css */
+
+.timeline-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px; /* Add margin to create space between sponsors and timeline */
+  overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+.timeline-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px; /* Add some margin to push the heading down */
+  color: #3498db; /* Adjust the color for better visibility */
+}
+
+.timeline-wrapper {
+  width: 50%; /* Adjust width as needed to match the sponsors section */
+  border: 2px solid #3498db; /* Add border around the timeline */
+  border-radius: 10px; /* Add border radius to match the sponsors section */
+  padding: 20px; /* Add padding to create space between the timeline and the border */
+  box-sizing: border-box; /* Include border in the width calculation */
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-event {
+  border-left: 1px solid #3498db; /* Blue color for thinner event line */
+  padding: 15px; /* Adjust padding for smaller border */
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline-event-header {
+  font-weight: bold;
+  color: #3498db; /* Blue color for event header */
+  margin-bottom: 10px;
+}
+
+.timeline-event-description {
+  color: white; /* Dark color for event description */
+}
+
+.timeline-event::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #3498db; /* Blue color for event marker */
+  border-radius: 30%;
+  position: absolute;
+  left: -6px; /* Adjust the marker position */
+  top: 50%;
+  transform: translateY(-50%);
+}
