@@ -105,9 +105,7 @@ const App = () => {
 
       <BigHeading />
 
-      <h2 className="text-center text-3xl font-bold mb-4 heading-3d">
-        Techsurge & Mridang 2K24
-      </h2>
+      <h2 className="text-center text-3xl font-bold mb-4 heading-3d" style={{ textAlign: "center" }}> Techsurge & Mridang 2K24</h2>
 
       <Carousel />
 
