@@ -141,20 +141,7 @@ const App = () => {
               Sector-22, New Delhi, Delhi 110086
             </p>
             <p>Email: info@edcmait.ac.in</p>
-          </div>
-          <div className="md:w-1/2 text-center md:text-right md:order-2">
-            <div className="footer-section flex justify-between items-center">
-              {menuItems.map((item) => (
-                <a
-                  key={item.id}
-                  href={`#${item.id}`}
-                  className="mr-4 mb-2 md:mb-0"
-                  onClick={() => scrollToSection(item.id)}
-                >
-                  {item.label}
-                </a>
-              ))}
-              <a
+            <a
                 href="https://maps.app.goo.gl/dxrbBtFzmrX3uGBi6"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -173,6 +160,20 @@ const App = () => {
                 className="mr-4 mb-2 md:mb-0"
               >
               </a>
+          </div>
+          <div className="md:w-1/2 text-center md:text-right md:order-2">
+            <div className="footer-section flex justify-between items-center">
+              {menuItems.map((item) => (
+                <a
+                  key={item.id}
+                  href={`#${item.id}`}
+                  className="mr-4 mb-2 md:mb-0"
+                  onClick={() => scrollToSection(item.id)}
+                >
+                  {item.label}
+                </a>
+              ))}
+  
               <p>Made by ❤️ Subhasish Panda EDC MAIT</p>
               <p className="mb-2">
                 &copy; 2024 HACKNOVATE. All rights reserved.
