@@ -1,25 +1,22 @@
-/* BigHeading.css */
-
-/* Default styles */
 .big-heading-container {
   text-align: center;
 }
 
 .big-heading-text {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 64px; /* Default font size */
+  font-size: 64px; 
 }
 
 .big-heading-desc {
-  font-size: 24px; /* Default font size */
+  font-size: 24px; 
 }
 
 .presented-by {
-  font-size: 18px; /* Default font size */
+  font-size: 18px;
 }
 
 .letter {
-  font-size: 200px; /* Default font size */
+  font-size: 200px;
   font-weight: bold;
   background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   -webkit-background-clip: text;
@@ -45,7 +42,6 @@
   }
 
   .letter {
-    font-size: 80px; /* Adjusted font size for mobile */
+    font-size: 80px; 
   }
 }
-
