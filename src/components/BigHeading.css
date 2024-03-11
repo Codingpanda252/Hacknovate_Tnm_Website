@@ -12,11 +12,11 @@
 }
 
 .presented-by {
-  font-size: 18px;
+  font-size: 18px; 
 }
 
 .letter {
-  font-size: 200px;
+  font-size: 200px; 
   font-weight: bold;
   background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   -webkit-background-clip: text;
@@ -30,11 +30,11 @@
 
 @media only screen and (max-width: 600px) {
   .big-heading-text {
-    font-size: 36px; 
+    font-size: 24px; 
   }
 
   .big-heading-desc {
-    font-size: 18px; 
+    font-size: 16px;
   }
 
   .presented-by {
@@ -42,6 +42,6 @@
   }
 
   .letter {
-    font-size: 80px; 
+    font-size: 60px; 
   }
 }
