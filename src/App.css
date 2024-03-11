@@ -54,7 +54,7 @@ header {
   padding: 20px;
   background-color: transparent;
   position: relative;
-  margin-top: 0; /* Adjusted to align navbar at top */
+  margin-top: 0; 
 }
 
 .header-text {
@@ -83,7 +83,7 @@ nav {
   top: 0;
   right: 20px;
   background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.8) 100%);
-  padding: 20px 40px; /* Increased padding for larger navbar */
+  padding: 20px 40px; 
 }
 
 .nav-links {
@@ -184,7 +184,7 @@ nav {
 
 /* Footer styles */
 footer {
-  background-color: rgba(0, 0, 0, 0.6); /* Black with transparency */
+  background-color: rgba(0, 0, 0, 0.6); 
   color: white;
   padding: 20px;
   position: static; /* Set footer position to static */
@@ -194,24 +194,24 @@ footer {
 @media only screen and (max-width: 600px) {
   .App {
     font-size: calc(8px + 2vmin); 
-    min-height: 100vh; /* Ensure minimum height covers the whole screen */
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Align children vertically */
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
+    min-height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
   }
 
   .App-logo {
     height: 20vmin; 
   }
-
+  
   .heading-container {
-    flex: 1; /* Let heading container take remaining space */
+    flex: 1;
     padding: 20px;
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Align children vertically */
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
   }
 
   .heading {
@@ -219,10 +219,10 @@ footer {
   }
 
   nav {
-    position: fixed; /* Set navbar position to fixed */
-    top: 10px; /* Adjust top position as needed */
-    right: 10px; /* Adjust right position as needed */
-    z-index: 1000; /* Ensure navbar is above other content */
+    position: fixed; 
+    top: 10px; 
+    right: 10px; 
+    z-index: 1000; 
   }
 
   .nav-links {
@@ -252,5 +252,15 @@ footer {
   footer {
     position: static; 
     margin-top: 20px; 
+  }
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 601px) {
+  nav {
+    position: fixed; 
+    top: 0; 
+    right: 20px; 
+    z-index: 1000; 
   }
 }

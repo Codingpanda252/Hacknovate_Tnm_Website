@@ -85,7 +85,6 @@ const App = () => {
 
       <header className="bg-blue-700 text-white p-4">
         <div className="container mx-auto flex justify-between items-center">
-
           <nav className={`hidden md:flex ${isMenuOpen ? "flex" : "hidden"}`}>
             <div className="container mx-auto text-white p-4">
               {menuItems.map((item) => (
@@ -105,7 +104,17 @@ const App = () => {
 
       <BigHeading />
 
-      <h2 className="text-center text-3xl font-bold mb-4 heading-3d" style={{ textAlign: "center" }}> Techsurge & Mridang 2K24</h2>
+      <h2 className="text-center text-3xl font-bold mb-4 heading-3d">
+        Techsurge & Mridang 2K24
+      </h2>
+
+      <h2
+        className="text-center text-3xl font-bold mb-4 heading-3d"
+        style={{ textAlign: "center" }}
+      >
+        {" "}
+        Techsurge & Mridang 2K24
+      </h2>
 
       <Carousel />
 
@@ -171,8 +180,7 @@ const App = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mr-4 mb-2 md:mb-0"
-              >
-              </a>
+              ></a>
               <p>Made by ❤️ Subhasish Panda EDC MAIT</p>
               <p className="mb-2">
                 &copy; 2024 HACKNOVATE. All rights reserved.
