@@ -1,20 +1,22 @@
+/* Carousel.css */
+
 .carousel-container {
-  width: 100%; 
-  overflow: hidden;
+  width: 100%; /* Set the width to fill the container */
+  overflow: hidden; /* Hide overflow content */
 }
 
 .react-responsive-carousel .carousel .carousel-item {
-  width: 20%; 
-  margin: 0 auto; 
+  width: 20%; /* Adjust the width of the carousel item for mobile */
+  margin: 0 auto; /* Center the carousel item horizontally */
 }
 
 .react-responsive-carousel .carousel .carousel-item img {
-  width: 100%; 
-  height: auto; 
+  max-width: 100%; /* Set a maximum width for the images */
+  height: auto; /* Ensure the image maintains its aspect ratio */
 }
 
 @media (max-width: 600px) {
   .react-responsive-carousel .carousel .carousel-item {
-      width: 50%; 
+      width: 50%; /* Adjust the width of the carousel item for smaller screens */
   }
 }
