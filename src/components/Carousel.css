@@ -5,9 +5,9 @@
 @media (max-width: 600px) {
   .react-responsive-carousel .carousel .carousel-item {
       width: 80vw; 
-      max-width: 300px; 
+      max-width: 300px;
       height: auto; 
-      margin: 0 auto; 
+      margin: 0 auto;
   }
 
   .react-responsive-carousel .carousel .carousel-item img {
