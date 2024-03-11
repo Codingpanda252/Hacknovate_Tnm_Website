@@ -1,17 +1,17 @@
-/* Carousel.css */
-
 .carousel-container {
-    padding: 50px 0; /* Adjust the top and bottom padding */
-  }
-  
+  padding: 20px 0; 
+}
+
+@media (max-width: 600px) {
   .react-responsive-carousel .carousel .carousel-item {
-    width: 80px; /* Adjust the width of the carousel item */
-    height: 60px; /* Adjust the height of the carousel item */
-    margin: 0 40px; /* Adjust the left and right margin for spacing */
+      width: 80vw; 
+      max-width: 300px; 
+      height: auto; 
+      margin: 0 auto; 
   }
-  
+
   .react-responsive-carousel .carousel .carousel-item img {
-    width: 100%; /* Ensure the image fills the carousel item */
-    height: auto; /* Ensure the image maintains its aspect ratio */
+      width: 100%; 
+      height: auto; 
   }
-  
+}
