@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #282c34; 
+  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,7 +22,7 @@
 }
 
 .App-header {
-  background-color: transparent; 
+  background-color: transparent;
 }
 
 .App-link {
@@ -53,25 +53,25 @@ header {
   padding: 20px;
   background-color: transparent;
   position: relative;
-  margin-top: 0; 
+  margin-top: 0;
 }
 
 .header-text {
   font-size: 36px;
   font-weight: bold;
   color: transparent;
-  text-shadow: 1px 1px 1px #888, -1px -1px 1px #ccc; 
+  text-shadow: 1px 1px 1px #888, -1px -1px 1px #ccc;
 }
 
 .header-logo {
   font-size: 24px;
   font-weight: bold;
-  color: #61dafb; 
+  color: #61dafb;
 }
 
 .logo-link {
-  display: inline-block; 
-  margin-right: 20px; 
+  display: inline-block;
+  margin-right: 20px;
 }
 
 .logo {
@@ -88,16 +88,17 @@ header {
   color: white;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   -webkit-text-stroke: 2px black;
-  text-stroke: 2px black; 
-  font-size: 48px; 
+  text-stroke: 2px black;
+  font-size: 48px;
 }
 
 nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 20px;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.8) 100%);
-  padding: 20px 40px; 
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.8) 100%);
+  padding: 20px 40px;
+  transition: top 0.3s; 
 }
 
 .nav-links {
@@ -115,8 +116,9 @@ nav {
 }
 
 .nav-link:hover {
-  color: #ffb8c6; 
+  color: #ffb8c6;
 }
+
 
 .heading-container {
   position: relative;
@@ -129,7 +131,7 @@ nav {
 .heading {
   font-size: 120px;
   font-weight: bold;
-  color: white; 
+  color: white;
   cursor: pointer;
   position: relative;
   overflow: hidden;
@@ -143,7 +145,7 @@ nav {
   left: 50%;
   width: 300%;
   height: 300%;
-  background: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(255,255,255,0.6) 100%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 100%);
   animation: particle 1.5s linear forwards;
   transform: translate(-50%, -50%);
   z-index: -1;
@@ -160,7 +162,7 @@ nav {
   left: 0;
   width: 300%;
   height: 300%;
-  background: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(255,255,255,0.6) 100%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 100%);
   animation: particle 1.5s linear forwards;
   transform: translate(-50%, -50%);
   z-index: -1;
@@ -177,41 +179,41 @@ nav {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-image: url('images/background.jpg'); 
+  background-image: url('images/background.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  opacity: 0.5; 
+  opacity: 0.5;
   filter: blur(5px);
   transform: scale(1.1);
 }
 
 .blur {
-  filter: blur(5px); 
+  filter: blur(5px);
 }
 
 .map-image {
-  width: 20px; 
+  width: 20px;
   height: 20px;
-  margin-left: 5px; 
+  margin-left: 5px;
 }
 
 footer {
-  background-color: rgba(0, 0, 0, 0.6); 
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
   padding: 20px;
-  position: static; 
+  position: static;
 }
 
 @media only screen and (max-width: 600px) {
   nav {
-    position: fixed; 
-    top: 10px; 
-    right: 10px; 
-    z-index: 1000; 
-    background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.8) 100%);
-    padding: 10px 20px; 
-    border-radius: 10px; 
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.8) 100%);
+    padding: 10px 20px;
+    border-radius: 10px;
   }
 
   .nav-links {
@@ -223,8 +225,8 @@ footer {
   }
 
   .nav-link {
-    margin: 0 10px; 
-    font-size: 14px; 
+    margin: 0 10px;
+    font-size: 14px;
   }
 
   .App-header {

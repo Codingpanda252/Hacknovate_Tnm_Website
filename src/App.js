@@ -40,7 +40,7 @@ const App = () => {
   };
 
   const menuItems = [
-    { id: "home", label: "Home " },
+    { id: "home", label: "Home" },
     { id: "countdown", label: "Countdown" },
     { id: "prizes", label: "Prizes" },
     { id: "sponsors", label: "Sponsors" },
@@ -106,7 +106,7 @@ const App = () => {
                   onClick={() => scrollToSection(item.id)}
                   aria-label={item.label.trim()}
                 >
-                  <span className="sr-only">{item.label.trim()}</span>
+                  {item.label.trim()}
                 </a>
               ))}
             </div>
@@ -120,7 +120,6 @@ const App = () => {
         className="text-center text-3xl font-bold mb-4 heading-3d"
         style={{ textAlign: "center" }}
       >
-        {" "}
         Techsurge & Mridang 2K24
       </h2>
 
