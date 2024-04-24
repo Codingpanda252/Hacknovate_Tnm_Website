@@ -1,5 +1,3 @@
-// src/components/Prizes.js
-
 import React from "react";
 import "./Prizes.css";
 
@@ -19,7 +17,7 @@ const Prizes = () => {
           <div className="overlay">
             <div className="overlay-content">
               <h3>Runner Up Prize</h3>
-              <p>Description of Runner Up Prize.</p>
+              <p>Runner Up Prize</p>
             </div>
           </div>
         </div>
@@ -32,7 +30,7 @@ const Prizes = () => {
           <div className="overlay">
             <div className="overlay-content">
               <h3>Winner Prize</h3>
-              <p>Description of Runner Up Prize.</p>
+              <p>Winner Prize worth Rs. 3000/-</p>
             </div>
           </div>
         </div>
@@ -45,7 +43,7 @@ const Prizes = () => {
           <div className="overlay">
             <div className="overlay-content">
               <h3>Second Runner Up Prize</h3>
-              <p>Description of Second Runner Up Prize.</p>
+              <p>Second Runner Up Prize</p>
             </div>
           </div>
         </div>

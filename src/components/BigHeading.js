@@ -30,6 +30,8 @@ const BigHeading = () => {
       <div className="big-heading-desc text-center">
         <p className="presented-by">Presented By</p>
         <p className="EDC-MAIT">Entrepreneurship Development Cell, MAIT</p>
+        <p className="presented-by">Venue</p>
+        <p className="presented-by">Room Number 245-B, MAIT Campus</p>
       </div>
       <div className="flex flex-col justify-center items-center h-screen">
         <h2 className="text-3xl font-bold mb-2">Register Now</h2>

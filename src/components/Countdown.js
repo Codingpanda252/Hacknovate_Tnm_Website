@@ -3,7 +3,12 @@ import './Countdown.css';
 
 const Countdown = () => {
     const calculateTimeLeft = () => {
-        const difference = +new Date('2024-03-21') - +new Date();
+        const now = new Date();
+        const tomorrow = new Date(now);
+        tomorrow.setDate(now.getDate() + 1);
+        tomorrow.setHours(12, 0, 0, 0); 
+
+        const difference = tomorrow - now;
         let timeLeft = {};
 
         if (difference > 0) {
@@ -12,6 +17,13 @@ const Countdown = () => {
                 hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
                 minutes: Math.floor((difference / 1000 / 60) % 60),
                 seconds: Math.floor((difference / 1000) % 60)
+            };
+        } else {
+            timeLeft = {
+                days: 0,
+                hours: 0,
+                minutes: 0,
+                seconds: 0
             };
         }
 
@@ -45,7 +57,6 @@ const Countdown = () => {
                 <div className="countdown-item" data-label="M">
                     <span className="countdown-value">{minutes}</span>
                     <span className="countdown-label">Minutes</span>
-
                 </div>
                 <div className="countdown-item" data-label="S">
                     <span className="countdown-value">{seconds}</span>

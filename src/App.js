@@ -6,6 +6,7 @@ import Sponsors from "./components/Sponsors";
 import Timeline from "./components/Timeline";
 import ProjectThemes from "./components/ProjectThemes";
 import FAQ from "./components/FAQ";
+import Judges from "./components/Judges";
 import Carousel from "./components/Carousel";
 import BigHeading from "./components/BigHeading";
 import "./components/BigHeading.css";
@@ -39,12 +40,13 @@ const App = () => {
   };
 
   const menuItems = [
-    { id: "home", label: " Home " },
-    { id: "countdown", label: " Countdown " },
-    { id: "prizes", label: " Prizes " },
-    { id: "sponsors", label: " Sponsors " },
-    { id: "timeline", label: " Timeline " },
-    { id: "themes-tracks", label: " Themes & Tracks " },
+    { id: "home", label: "Home " },
+    { id: "countdown", label: "Countdown" },
+    { id: "prizes", label: "Prizes" },
+    { id: "sponsors", label: "Sponsors" },
+    { id: "timeline", label: "Timeline" },
+    { id: "themes-tracks", label: "Themes & Tracks" },
+    { id: "judges", label: "Judges" },
     { id: "faq", label: "FAQ" },
   ];
 
@@ -58,44 +60,53 @@ const App = () => {
       ></div>
 
       <header className="p-4 flex justify-start items-start">
-        <img
-          src="logo3.png"
-          alt="Logo 1"
-          style={{ width: "60px", height: "60px" }}
-          className="mr-2"
-        />
-        <img
-          src="logo4.png"
-          alt="Logo 2"
-          style={{ width: "60px", height: "60px" }}
-          className="mr-2"
-        />
-        <img
-          src="logo1.jpg"
-          alt="Logo 3"
-          style={{ width: "60px", height: "60px" }}
-          className="mr-2"
-        />
-        <img
-          src="logo2.jpg"
-          alt="Logo 4"
-          style={{ width: "60px", height: "60px" }}
-        />
+        <a
+          href="https://www.mait.ac.in/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="logo-link"
+        >
+          <img src="logo3.png" alt="Logo 1" className="logo" />
+        </a>
+        <a
+          href="https://www.mait.ac.in/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="logo-link"
+        >
+          <img src="logo4.png" alt="Logo 2" className="logo" />
+        </a>
+        <a
+          href="https://tnm.mait.ac.in/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="logo-link"
+        >
+          <img src="logo1.jpg" alt="Logo 3" className="logo" />
+        </a>
+        <a
+          href="https://www.instagram.com/edcell.mait/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="logo-link"
+        >
+          <img src="logo2.jpg" alt="Logo 4" className="logo" />
+        </a>
       </header>
 
       <header className="bg-blue-700 text-white p-4">
         <div className="container mx-auto flex justify-between items-center">
-
           <nav className={`hidden md:flex ${isMenuOpen ? "flex" : "hidden"}`}>
             <div className="container mx-auto text-white p-4">
               {menuItems.map((item) => (
                 <a
                   key={item.id}
                   href={`#${item.id}`}
-                  className="block py-2"
+                  className="mr-4 mb-2 md:mb-0"
                   onClick={() => scrollToSection(item.id)}
+                  aria-label={item.label.trim()}
                 >
-                  {item.label}
+                  <span className="sr-only">{item.label.trim()}</span>
                 </a>
               ))}
             </div>
@@ -104,8 +115,14 @@ const App = () => {
       </header>
 
       <BigHeading />
-      
-      <h2 className="text-center text-3xl font-bold mb-4 heading-3d" style={{ textAlign: "center" }}> Techsurge & Mridang 2K24</h2>
+
+      <h2
+        className="text-center text-3xl font-bold mb-4 heading-3d"
+        style={{ textAlign: "center" }}
+      >
+        {" "}
+        Techsurge & Mridang 2K24
+      </h2>
 
       <Carousel />
 
@@ -133,6 +150,10 @@ const App = () => {
         <FAQ />
       </section>
 
+      <section id="judges" className="bg-white p-8">
+        <Judges />
+      </section>
+
       <footer className="bg-gray-800 text-white p-8">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
           <div className="md:w-1/2 mb-4 md:mb-0 md:order-1">
@@ -142,24 +163,19 @@ const App = () => {
             </p>
             <p>Email: info@edcmait.ac.in</p>
             <a
-                href="https://maps.app.goo.gl/dxrbBtFzmrX3uGBi6"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mr-4 mb-2 md:mb-0 map-image"
-              >
-                <img
-                  src="map-image.png"
-                  alt="Map Location"
-                  className="w-6 h-6"
-                />
-              </a>
-              <a
-                href="https://maps.app.goo.gl/dxrbBtFzmrX3uGBi6"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mr-4 mb-2 md:mb-0"
-              >
-              </a>
+              href="https://maps.app.goo.gl/dxrbBtFzmrX3uGBi6"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mr-4 mb-2 md:mb-0 map-image"
+            >
+              <img src="map-image.png" alt="Map Location" className="w-6 h-6" />
+            </a>
+            <a
+              href="https://maps.app.goo.gl/dxrbBtFzmrX3uGBi6"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mr-4 mb-2 md:mb-0"
+            ></a>
           </div>
           <div className="md:w-1/2 text-center md:text-right md:order-2">
             <div className="footer-section flex justify-between items-center">
@@ -170,10 +186,10 @@ const App = () => {
                   className="mr-4 mb-2 md:mb-0"
                   onClick={() => scrollToSection(item.id)}
                 >
-                  {item.label}
+                  {item.label.trim()}
                 </a>
               ))}
-  
+
               <p>Made by ❤️ Subhasish Panda EDC MAIT</p>
               <p className="mb-2">
                 &copy; 2024 HACKNOVATE. All rights reserved.
