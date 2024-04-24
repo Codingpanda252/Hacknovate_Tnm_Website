@@ -12,14 +12,14 @@ const Judge_data = [
     id: 2,
     name: "Dr. Amit Gautum",
     description:
-      "Asst. Director of Career Development Cell of Maharaja Agrasen Institute of Technology (MAIT)",
+      "Assistant Director of Career Development Cell of Maharaja Agrasen Institute of Technology (MAIT)",
     src: "/AmitGautum.png",
   },
   {
     id: 3,
     name: "Dr. Jyoti Kaushik",
     description:
-      "Assistant Professor at Maharaja Agrasen Institute Of Technology",
+      "Assistant Professor at Maharaja Agrasen Institute Of Technology (MAIT)",
     src: "/JyotiKaushik.png",
   },
 ];

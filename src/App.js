@@ -170,24 +170,22 @@ const App = () => {
             >
               <img src="map-image.png" alt="Map Location" className="w-6 h-6" />
             </a>
-            <a
-              href="https://maps.app.goo.gl/dxrbBtFzmrX3uGBi6"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mr-4 mb-2 md:mb-0"
-            ></a>
           </div>
           <div className="md:w-1/2 text-center md:text-right md:order-2">
             <div className="footer-section flex justify-between items-center">
-              {menuItems.map((item) => (
-                <a
-                  key={item.id}
-                  href={`#${item.id}`}
-                  className="mr-4 mb-2 md:mb-0"
-                  onClick={() => scrollToSection(item.id)}
-                >
-                  {item.label.trim()}
-                </a>
+              {menuItems.map((item, index) => (
+                <React.Fragment key={item.id}>
+                  <a
+                    href={`#${item.id}`}
+                    className="mr-4 mb-2 md:mb-0"
+                    onClick={() => scrollToSection(item.id)}
+                  >
+                    {item.label.trim()}
+                  </a>
+                  {index !== menuItems.length - 1 && (
+                    <span className="mr-4"> </span>
+                  )}
+                </React.Fragment>
               ))}
 
               <p>Made by ❤️ Subhasish Panda EDC MAIT</p>

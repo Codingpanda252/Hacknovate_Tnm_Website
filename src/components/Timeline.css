@@ -1,28 +1,42 @@
-/* Timeline.css */
-
 .timeline-container {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 20px; /* Add margin to create space between sponsors and timeline */
-  overflow-x: hidden; /* Hide horizontal overflow */
+  margin-top: 20px;
+  overflow-x: hidden;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.timeline-container.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .timeline-heading {
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 20px; /* Add some margin to push the heading down */
-  color: #3498db; /* Adjust the color for better visibility */
+  margin-bottom: 20px;
+  color: #3498db;
 }
 
-.timeline-wrapper {
-  width: 50%; /* Adjust width as needed to match the sponsors section */
-  border: 2px solid #3498db; /* Add border around the timeline */
-  border-radius: 10px; /* Add border radius to match the sponsors section */
-  padding: 20px; /* Add padding to create space between the timeline and the border */
-  box-sizing: border-box; /* Include border in the width calculation */
+.progress-tracker {
+  width: 5px;
+  background-color: #ccc;
+  position: relative;
+  margin: 20px 0;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #3498db;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: height 0.5s ease;
 }
 
 .timeline {
@@ -31,30 +45,38 @@
 }
 
 .timeline-event {
-  border-left: 1px solid #3498db; /* Blue color for thinner event line */
-  padding: 15px; /* Adjust padding for smaller border */
+  border-left: 1px solid #3498db;
+  padding: 15px;
   margin-bottom: 20px;
   position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.timeline-container.visible .timeline-event {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .timeline-event-header {
   font-weight: bold;
-  color: #3498db; /* Blue color for event header */
+  color: #3498db;
   margin-bottom: 10px;
 }
 
 .timeline-event-description {
-  color: white; /* Dark color for event description */
+  color: white;
 }
 
 .timeline-event::before {
   content: '';
   width: 10px;
   height: 10px;
-  background-color: #3498db; /* Blue color for event marker */
+  background-color: #3498db;
   border-radius: 30%;
   position: absolute;
-  left: -6px; /* Adjust the marker position */
+  left: -6px;
   top: 50%;
   transform: translateY(-50%);
 }

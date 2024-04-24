@@ -30,7 +30,7 @@ const Prizes = () => {
           <div className="overlay">
             <div className="overlay-content">
               <h3>Winner Prize</h3>
-              <p>Winner Prize worth Rs. 3000/-</p>
+              <p>Winner Prize worth Rs. 10000/-</p>
             </div>
           </div>
         </div>

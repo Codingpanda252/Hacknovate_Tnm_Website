@@ -4,11 +4,10 @@ import './Countdown.css';
 const Countdown = () => {
     const calculateTimeLeft = () => {
         const now = new Date();
-        const tomorrow = new Date(now);
-        tomorrow.setDate(now.getDate() + 1);
-        tomorrow.setHours(12, 0, 0, 0); 
+        const targetTime = new Date(now);
+        targetTime.setHours(12, 0, 0, 0);
 
-        const difference = tomorrow - now;
+        const difference = targetTime - now;
         let timeLeft = {};
 
         if (difference > 0) {
